@@ -1,0 +1,9 @@
+from numpy.linalg import inv
+a_inv = inv(a)
+
+for i in range(8):
+  x = np.dot(a_inv, x)
+  lambda_1, x = normalize(x)
+
+print('Eigenvalue: ', lambda_1)
+print('Eigenvector: ', x)
